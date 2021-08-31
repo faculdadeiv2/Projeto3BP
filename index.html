@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="form.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Projeto Level 3</title>
+</head>
+
+<body>
+  <main>
+    <!-- Formulário 1: -->
+    <section>
+      <form>
+        <fieldset id="fieldset1">
+          <legend class="legendas">Formulário 1:</legend>
+          <label for="nomeUsuario">Nome:</label>
+          <input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="Insira seu nome...">
+          <br>
+          <label for="idade">Idade:</label>
+          <input type="number" name="idade" id="idade" placeholder="Insira sua idade...">
+          <br>
+          <button id="btnAlertar" name="btnAlertar" class="botao" type="button">Alertar</button>
+        </fieldset>
+      </form>
+    </section>
+    <!-- Formulário 2: -->
+    <section>
+      <form>
+        <fieldset id="fieldset2">
+          <legend class="legendas">Formulário 2:</legend>
+          <fieldset>
+            <legend>Circunferência:</legend>
+            <label for="raio">Raio:</label>
+            <br>
+            <input type="number" name="raio" id="raio" placeholder="Insira o raio...">
+            <br>
+            <div id="dadosCircunferencia">
+              <label>Circunferência:
+                <span id="circunferencia"></span>
+              </label>
+              <label>Área da Circunferência:
+                <span id="areaCircunferencia"></span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Cubo:</legend>
+            <label for="baseCubo">Base:</label>
+            <br>
+            <input type="number" name="baseCubo" id="baseCubo" placeholder="Insira o base...">
+            <br>
+            <div id="dadosCubo">
+              <label>Área da base:
+                <span id="areaCubo"></span>
+              </label>
+              <label>Volume:
+                <span id="volume"></span>
+              </label>
+              <label>Área total:
+                <span id="areaTotal"></span>
+              </label>
+              <label>Área lateral:
+                <span id="areaLateral"></span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Trapézio:</legend>
+            <div id="dadosTrapezio">
+              <label for="baseMaior">Base maior:</label>
+              <input type="number" name="baseMaior" id="baseMaior" placeholder="Insira a base maior...">
+              <br>
+              <label for="baseMenor">Base menor:</label>
+              <input type="number" name="baseMenor" id="baseMenor" placeholder="Insira a base menor...">
+              <br>
+              <label for="altura">Altura:</label>
+              <input type="number" name="altura" id="altura" placeholder="Insira a altura...">
+              <br>
+            </div>
+            <label>Área do trapézio:
+              <span id="areaTrapezio"></span>
+            </label>
+          </fieldset>
+          <button type="button" name="calcular" class="botao" id="calcular">Calcular</button>
+        </fieldset>
+      </form>
+    </section>
+    <!-- Número aleatório -->
+    <section>
+      <div id="divRandom">
+        <h2>Número aleatório</h2>
+        <label for="btnAleatorio">Clique para gerar um número aleatório:</label>
+        <button id="btnAleatorio" class="botao">
+          <img src="https://image.flaticon.com/icons/png/512/1738/1738766.png" alt="Clique" width="30" id="imgBtn">
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

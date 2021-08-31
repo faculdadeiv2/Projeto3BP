@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin-top: 7vh;
+}
+
+fieldset {
+  padding: 2vh;
+  margin: 3vh 1vw;
+  flex-wrap: wrap;
+  background-color: #C63E65;
+}
+
+.legendas {
+  text-align: center;
+  font-size: 1.2em;
+  color: white  ;
+}
+
+#fieldset1, #fieldset2 {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 3px 5px 2px #5D1A2F;
+  border: 1px solid #6E0158;
+}
+
+#dadosCubo, #dadosCircunferencia, #dadosTrapezio {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#dadosCubo label, #dadosCircunferencia label {
+  margin: 1vh 0vw;
+}
+
+.botao {
+  margin: 0vh 25vw;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: #6E0158;
+  color: white;
+  padding: 10px;
+}
+
+#fieldset2 fieldset {
+  border-radius: 15px;
+  border: 1px solid #6E0158;
+  background-color: #75233a;
+  color: white;
+}
+
+input[type='text'], input[type='number'] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+  width: 100%;
+  margin-left: 0.5h;
+}
+
+input[type='text']:focus, input[type='number']:focus {
+  border: 1px solid #6E0158;
+}
+
+#divRandom {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80vw;
+  margin: 10vh 0vw;
+  padding-bottom: 3vh;
+  border-radius: 15px;
+  box-shadow: 3px 5px 2px #5D1A2F;
+  border: 1px solid #6E0158;
+  background-color: #C63E65;
+}
+
+#divRandom h2 {
+  text-align: center;
+  margin: 2vh 0vw;
+  color: white;
+}
+
+#divRandom label {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+#btnAleatorio img {
+  filter: invert(100%);
+}
